@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.loginForm{
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+}
+.form{
+  width: 80%;
+  display: flex;
+  flex-flow:column ;
+  justify-content: center;
+  align-content: center;
+  background-color: #C4C4C4;
+}
+.form button{
+  position: relative;
+  left: 25%;
+  margin-top: 20px;
+  border: 1px solid #828282;
+  border-radius: 25px;
+  background-color: #828282;
+  width: 50%;
+  font-size: 1.4em;
+}
+.form input{
+  background-color: rgb(226, 225, 225);
+  border:none;
+  padding:10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+::placeholder {
+  color: rgb(119, 119, 119);
+  font-size: 1.5em;
+}
+.link{
+  display: flex;
+  flex-flow:row ;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-decoration: underline;
+  color: #88888C;
+  font-size: 0.8em;
+}
+span{
+  font-weight: 600;
+  color: black;
+}
+.timer{
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.timeContainer{
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  font-weight: 400;
+}
+.mobile{
+  padding: 30px;
+  display: flex ;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.clock{
+  height: 200px;
+  width: 200px;
+  background-color: #C4C4C4;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signout{
+  align-self: flex-end;
+}
+.signout button{
+  width: 80px;
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: white;
+  border:none
+
+}
+button:hover {
+  background-color:rgb(226, 225, 225);
+  color: green;
+} 
+.signout button:hover {
+  background-color:white;
+  color: green;
+} 
+a span:hover {
+  color: green;
+} 
+.notFound{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
