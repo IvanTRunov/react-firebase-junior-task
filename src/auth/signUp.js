@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useHistory, Link } from 'react-router-dom'
 import * as ROUTES from '../constants/routes'
-import app from '../components/firebase';
+import app from '../config/firebase';
 
 
 export default function SignUp() {
@@ -33,7 +33,7 @@ export default function SignUp() {
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
                         type="text"
-                        placeholder="...firstName"
+                        placeholder="First name"
                         required
                     />
                     <input
@@ -41,7 +41,7 @@ export default function SignUp() {
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
                         type="text"
-                        placeholder="...lastName"
+                        placeholder="Last name"
                         required
                     />
                     <input
@@ -49,7 +49,7 @@ export default function SignUp() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         type="email"
-                        placeholder="...email"
+                        placeholder="Email"
                         required
                     />
                     <input
@@ -57,7 +57,7 @@ export default function SignUp() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         type="password"
-                        placeholder="...password"
+                        placeholder="Password"
                         required
                     />
                     <button type="submit">
