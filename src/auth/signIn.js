@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, withRouter, useHistory } from 'react-router-dom'
 import * as ROUTES from '../constants/routes'
-import app from '../components/firebase'
+import app from '../config/firebase'
 
 const SignIn = () => {
     const history = useHistory();
@@ -13,8 +13,6 @@ const SignIn = () => {
         app.auth().signInWithEmailAndPassword(email, password)
             .then(res => {
                 const user = res.user.uid;
-                setEmail('');
-                setPassword('');
                 if (user) {
                     history.push(ROUTES.TIMER)
                 } else {
@@ -22,8 +20,6 @@ const SignIn = () => {
                 }
             })
             .catch(err => {
-                setEmail('');
-                setPassword('');
                 alert(err)
             })
 
@@ -39,7 +35,7 @@ const SignIn = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         type="email"
-                        placeholder="...email"
+                        placeholder="Email"
                         required
                     />
                     <input
@@ -47,7 +43,7 @@ const SignIn = () => {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         type="password"
-                        placeholder="...password"
+                        placeholder="Password"
                         required
                     />
                     <button type="submit">
